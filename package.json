@@ -1,0 +1,32 @@
+{
+  "name": "incremental",
+  "version": "1.0.0",
+  "description": "increment alphabet characters or numbers with the ability to skip given values",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staygrimm/incremental.git"
+  },
+  "keywords": [
+    "increment",
+    "string",
+    "numeric",
+    "alphabet"
+  ],
+  "author": "River Grimm <river.grimm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/staygrimm/incremental/issues"
+  },
+  "homepage": "https://github.com/staygrimm/incremental",
+  "devDependencies": {
+    "duo": "^0.9.2",
+    "duo-test": "^0.3.13"
+  }
+}
