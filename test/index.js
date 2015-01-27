@@ -2,6 +2,12 @@ var increment = require('../');
 var assert = require('assert');
 
 describe('increment()', function () {
+    it('returns a string if `value` is a string', function () {
+        assert(increment('1') === '2');
+    });
+    it('returns a number if `value` is a number', function () {
+        assert(increment(1) === 2);
+    })
     it('increments a number value', function () {
         assert(increment(1) === 2);
     });
@@ -20,5 +26,5 @@ describe('increment()', function () {
     it('increments by given incremental value', function () {
         assert(increment(1, [], 2) === 3)
         assert(increment('A', [], 2) === 'C');
-    })
+    });
 });

@@ -13,16 +13,19 @@ module.exports = increment;
  * @api public
  */
 function increment(value, skip, incrementBy) {
+    var str = (typeof value === 'string');
     var incrementBy = incrementBy || 1;
-    var skip = skip || [];
     var numeric = !isNaN(value);
+    var skip = skip || [];
     var nextVal;
 
     if (numeric) {
-        value = (typeof value === 'string') ? (parseInt(value) + incrementBy).toString() : value + incrementBy;
+        value = parseInt(value) + parseInt(incrementBy);
     } else {
-        value = String.fromCharCode(value.charCodeAt(0) + incrementBy);
+        value = String.fromCharCode(value.charCodeAt(0) + parseInt(incrementBy));
     }
+
+    if (str) value = value.toString();
     if (skip.indexOf(value) === -1) return value;
     return increment(value, skip, incrementBy);
 };
