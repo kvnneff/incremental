@@ -21,9 +21,9 @@ or in the browser...
 
 ## API
 
-### increment(value, [skip], incrementBy)
+### increment(value, [skip], [incrementBy])
 
-Increment `value` by `incrementBy`. Optionally skip any values within `skip`.
+Increment `value` by `incrementBy` (increments by `1` if `incrementBy` is not given. Optionally skip any values within `skip`.
 
 ## License
 
