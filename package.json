@@ -1,6 +1,6 @@
 {
   "name": "incremental",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "increment alphabet characters or numbers with the ability to skip given values",
   "main": "index.js",
   "directories": {

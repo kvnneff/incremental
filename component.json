@@ -1,7 +1,7 @@
 {
   "name": "incremental",
   "description": "increment alphabet characters or numbers with the ability to skip given values",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "River Grimm <river.grimm@gmail.com>",
   "dependencies": {
     "component/assert": "0.5.0",
